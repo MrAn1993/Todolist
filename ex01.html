@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/ex01.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="todo-list">
+      <h1 class="title"><span class="term-title">Smatyx</span> Todos App</h1>
+      <div class="form-todo">
+        <div class="search-form">
+          <input type="text" placeholder="Search Todo" />
+          <button class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <button class="btn">Add Todos</button>
+      </div>
+
+      <div class="task"></div>
+
+      <div class="complete-form">
+        <button>
+          Completeed Todos <span>0</span>
+          <i class="fa-regular fa-circle-down"></i>
+        </button>
+      </div>
+
+      <div class="task-complete"></div>
+    </div>
+
+    <div class="overflow">
+      <form class="module-Add">
+        <div class="form-add">
+          <input required type="text" placeholder="Add Todos" />
+        </div>
+
+        <div class="control">
+          <button type="submit" class="save">Save</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <script type="module" src="./js/ex01.js"></script>
+  </body>
+</html>

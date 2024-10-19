@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  position: relative;
+}
+
+input,
+button {
+  /* outline: none; */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* opacity: 0.8; */
+}
+.todo-list {
+  padding: 40px 0;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.todo-list .title {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.todo-list .term-title {
+  background: linear-gradient(to right, #60a5fa, #059669);
+  background-clip: text;
+  color: transparent;
+}
+
+.form-todo {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-todo .search-form {
+  /* width: 80%; */
+  flex-grow: 1;
+  position: relative;
+}
+
+.form-todo .search-form input {
+  width: 100%;
+  height: 60px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.form-todo .btn {
+  width: 110px;
+  height: 45px;
+  background-color: #047857;
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-todo .btn:hover {
+  cursor: pointer;
+  background-color: #05523c;
+}
+
+.form-todo .btn-search {
+  width: 50px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #1d4ed8;
+  color: #fff;
+}
+
+.form-todo .btn-search:hover {
+  cursor: pointer;
+  background-color: #1541b9;
+}
+
+.complete-form {
+  text-align: left;
+}
+
+.complete-form button {
+  margin-top: 24px;
+  width: 200px;
+  height: 45px;
+  font-size: 16px;
+  /* float: left; */
+  background-color: #9ca3af;
+  color: #fff;
+}
+
+.complete-form button:hover {
+  background-color: #7c8189;
+}
+
+/* overflow  */
+
+.overflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(55, 65, 81, 0.6);
+  display: none;
+  /* align-items: center; */
+}
+
+.module-Add {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  /* margin-top: 30px; */
+  border-radius: 8px;
+  width: 450px;
+  background: #fff;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.module-Add .form-add input {
+  padding: 0 16px;
+  margin-top: 25px;
+  border-radius: 8px;
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+}
+
+.control {
+  margin-top: 40px;
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+}
+
+.control .save,
+.cancel {
+  width: 80px;
+  height: 45px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.control .save {
+  color: #fff;
+  background-color: #047857;
+}
+
+.control .save:hover {
+  background-color: #05523c;
+  cursor: pointer;
+}
+
+.control .cancel:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+/* CSS TASK  */
+
+/* .task {
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+} */
+
+.task-item {
+  margin-top: 25px;
+  position: relative;
+}
+
+.task-item input {
+  width: 100%;
+  height: 75px;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+.tool-edit {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  bottom: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.tool-edit button {
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.tool-edit button:hover {
+  cursor: pointer;
+}
+.tool-edit button:first-child {
+  background: #9f1239;
+}
+.tool-edit button:first-child:hover {
+  background: #743144;
+}
+
+.tool-edit button:nth-child(2) {
+  background: #1e40af;
+}
+
+.tool-edit button:nth-child(2):hover {
+  background: #27386f;
+}
+
+.tool-edit button:last-child {
+  background: rgb(156 163 175);
+}
+
+.tool-edit button:last-child:hover {
+  background: #5c5f63;
+}
+
+/* CSS Complete */
+.task-complete .tool-edit button:last-child {
+  background: #065f46;
+}
